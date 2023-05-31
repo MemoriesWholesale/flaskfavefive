@@ -1,0 +1,15 @@
+{% extends 'base.html' %} 
+ {%block header%}
+    <div class="jumbotron jumbotron-fluid">
+    <h3 class="display-5">    
+        My five favorite directions are...
+    </h3>
+    </div>
+ {%endblock%}
+ {%block content%} 
+    <ul class="list-group list-group-flush">
+        {% for d in directions %}
+            <li class="list-group-item"><strong>{{d}}</strong></li>
+        {%endfor%}
+    </ul>
+ {%endblock%}

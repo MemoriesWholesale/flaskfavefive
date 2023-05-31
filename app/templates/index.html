@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{%block header%}
+    <h3><strong>WELCOME</strong></h3>
+    <h5>to</h5>
+    <h1>MANI'S FAVORITE FIVE!!</h1>
+{% endblock %}
+
+{%block content%}
+    <button type="button" class="btn btn-success">
+        <a href={{url_for('five')}} class="link-light">CLICK TO REVEAL</a>
+    </button>
+{% endblock %}
